@@ -24,6 +24,66 @@ body .card {
 body .card.active {
   height: 420px;
 }
+body .card .contentBx {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+body .card .contentBx .content {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+body .card .contentBx .content h2 {
+  font-weight: 500;
+  font-size: 1.25em;
+  letter-spacing: 0.05em;
+  line-height: 1.1em;
+  margin-bottom: 2rem;
+}
+body .card .contentBx .content h2 span {
+  font-size: 0.75em;
+  font-weight: 400;
+  text-transform: initial;
+}
+body .card .contentBx .content .imgBx {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: #fff;
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.15);
+  border: 5px solid #fff;
+}
+body .card .contentBx .content .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .card .contentBx .content button {
+  position: relative;
+  margin-top: 20px;
+  padding: 10px 35px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: #333;
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.15);
+}
 body .card .toggle {
   position: absolute;
   bottom: -60px;
